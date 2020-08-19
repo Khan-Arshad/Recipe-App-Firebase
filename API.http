@@ -1,0 +1,24 @@
+https://europe-west1-khan-recipes.cloudfunctions.net/api/recipes
+
+###
+
+POST https://europe-west1-khan-recipes.cloudfunctions.net/api/login
+content-type: application/json
+
+{
+    "email" : "testuser4@testmail.com",
+    "password" : "test123"
+}
+
+####
+
+POST https://europe-west1-khan-recipes.cloudfunctions.net/api/recipe/
+
+Authorization: Basic testUser4:test123 
+content-type: application/json
+
+{
+      "title" : "Title new",
+      "ingredients" : "Ingredients list new",
+      "method" : "Method new"
+}
